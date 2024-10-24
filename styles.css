@@ -217,17 +217,19 @@ nav ul li a {
   align-items: center;
   background-color: #FFB600;
   padding: 40px;
-  border-radius: 10px;
 }
 
 .conteudo-sobre-nos {
-  max-width: 50%;
+  max-width: 55%;
 }
 
 .sobre-nos h2 {
   color: #733268;
   font-size: 36px;
   margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
 }
 
 .sobre-nos p {
@@ -242,20 +244,28 @@ nav ul li a {
 
 .sobre-nos blockquote {
   font-style: italic;
-  color: #6A1B9A;
+  color: #733268;
   font-size: 20px;
-  margin-left: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .imagens-sobre-nos {
   display: grid;
+  margin-top: 35px;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 15px;
   max-width: 30%;
+  margin-left: 35px;
 }
 
 .imagens-sobre-nos img {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#img2-sobre-nos{  
+  transform: translateY(15%);
 }
