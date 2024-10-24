@@ -88,7 +88,6 @@ nav ul li a {
 .voluntariado {
   background-color: #f9f9f9;
   text-align: center;
-  font-family: 'Poetsen One', sans-serif;
 }
 
 .voluntariado h2 {
@@ -110,7 +109,8 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #fff; /* Alterando fundo para branco */
+  background-color: #fff; /* Alterando fundo para branco */ /* Centraliza verticalmente os itens dentro da coluna */
+  align-items: center;
 }
 
 .coluna-desejo-ser-voluntario {
@@ -135,33 +135,51 @@ nav ul li a {
   color: white;
 }
 
-.paragrafo1-amarelo {
+
+.coluna-nossa-lojinha .paragrafo1-amarelo{
   font-family: 'Caveat', serif;
   color: #FFB600;
   font-size: 35px;
+  margin: 33px 0px 15px 0px;
+}
+
+.coluna-desejo-ser-voluntario .paragrafo1-amarelo{
+  font-family: 'Caveat', serif;
+  color: #FFB600;
+  font-size: 35px;
+  margin: 0px 0px 10px 0px;
 }
 
 .coluna-time-do-bem .paragrafo1-roxo {
   font-family: 'Caveat', serif;
   color: #733268;
   font-size: 35px;
+  margin: 10px 0px 10px 0px;
 }
 
-.paragrafo2 {
-  font-family: 'Roboto', serif;
-  font-weight: 700;
-  color: white; /* Cor do parágrafo 2 definida como branco */
+.paragrafo2,
+#roboto {
+  font-family: 'Roboto', sans-serif; 
+  color: white;/* Aplica Roboto aos parágrafos específicos */
+}
+
+.coluna-time-do-bem button,
+.coluna-nossa-lojinha button {
+  margin: 0 auto; /* Centraliza o botão horizontalmente */
+  display: block; /* Garante que o botão ocupe o espaço necessário */
 }
 
 .colunas button {
   background-color: transparent;
   border: 2px solid white; /* Certificando que o contorno é branco */
   color: white; /* Mantém o texto branco para melhor contraste */
-  width: 300px;
+  width: 230px;
   padding: 10px;
   border-radius: 25px;
+  margin-top: 20px;
   font-size: 1.1em;
   cursor: pointer;
+  text-align:  center;
 }
 
 .colunas button:hover {
@@ -186,8 +204,9 @@ nav ul li a {
   position: absolute;
   width: 210px;
   align-items: flex-end;
-  margin-top: 62px; /* Ajuste para alinhar a imagem */
+  margin-top: 105px; /* Ajuste para alinhar a imagem */
   left: 29%; /* Centraliza horizontalmente */
   transform: translateX(-50%); /* Corrige o deslocamento da imagem para o meio */
   z-index: 1; /* Garante que a imagem fique sobre as colunas */
 }
+
