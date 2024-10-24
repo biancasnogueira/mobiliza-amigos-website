@@ -12,12 +12,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 5px;
 }
 
 header {
   background-color: #fff;
-  padding: 20px 0;
+  padding: 5px 0;
   border-bottom: 1px solid #ddd;
 }
 
@@ -102,33 +102,29 @@ nav ul li a {
   align-items: stretch;
 }
 
-.colunas div {
-  flex: 1 1 33%;  
+.coluna {
+  flex: 1;  
   padding: 30px;
   min-height: 400px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #fff; /* Alterando fundo para branco */
 }
 
-.coluna-desejo-ser-voluntario img {
-  position: absolute;
-  left: 90%; /* Empurra a imagem para fora da coluna em direção à direita */
-  transform: translateX(-50%); /* Move a imagem para o meio, entre as colunas */
-  max-width: 230px;
-  height: 100%;
-}
-
-.coluna-desejo-ser-voluntario,
-.coluna-nossa-lojinha {
+.coluna-desejo-ser-voluntario {
   background-color: #733268;
   color: #fff;
-  position: relative; /* Torna a posição da imagem relativa a esta coluna */
 }
 
 .coluna-time-do-bem {
   background-color: #FFB600;
+  color: #733268; /* Cor do texto para o fundo amarelo */
+}
+
+.coluna-nossa-lojinha {
+  background-color: #733268;
   color: #fff;
 }
 
@@ -136,16 +132,7 @@ nav ul li a {
   font-size: 2.4em;
   font-family: 'Poetsen One', sans-serif;
   font-weight: 400;
-}
-
-.coluna {
-  flex: 1;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
+  color: white;
 }
 
 .paragrafo1-amarelo {
@@ -156,7 +143,7 @@ nav ul li a {
 
 .coluna-time-do-bem .paragrafo1-roxo {
   font-family: 'Caveat', serif;
-  color: #733268; /* Definindo a cor roxa aqui */
+  color: #733268;
   font-size: 35px;
 }
 
@@ -166,35 +153,41 @@ nav ul li a {
   color: white; /* Cor do parágrafo 2 definida como branco */
 }
 
-.coluna button {
-  padding: 15px 30px;
-  background-color: #fff;
-  color: #733268;
-  border: none;
-  font-size: 1em;
+.colunas button {
+  background-color: transparent;
+  border: 2px solid white; /* Certificando que o contorno é branco */
+  color: white; /* Mantém o texto branco para melhor contraste */
+  width: 300px;
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 1.1em;
   cursor: pointer;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-top: 20px;
-  border-radius: 30px;
 }
 
-.coluna-time-do-bem button {
-  background-color: #fff;
-  color: #FFB600;
+.colunas button:hover {
+  background-color: white;
+  color: #FFB600; /* Cor de fundo ao passar o mouse */
+  transition: 0.3s;
 }
 
-.coluna-time-do-bem p {
-  color: white; /* Aqui, o texto da descrição será branco */
+.coluna-nossa-lojinha {
+  display: flex;
+  flex-direction: column; /* Mantém a imagem e o botão alinhados verticalmente */
+  align-items: center;
 }
 
-.coluna-desejo-ser-voluntario p:nth-child(2) {
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #FFB600;
+.imagens-lojinha {
+  display: flex;
+  justify-content: center; /* Centraliza as imagens na coluna */
+  gap: 10px; /* Espaçamento entre as imagens */
 }
 
-.coluna-nossa-lojinha button {
-  background-color: #fff;
-  color: #733268;
+.coluna-desejo-ser-voluntario img {
+  position: absolute;
+  width: 210px;
+  align-items: flex-end;
+  margin-top: 62px; /* Ajuste para alinhar a imagem */
+  left: 29%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Corrige o deslocamento da imagem para o meio */
+  z-index: 1; /* Garante que a imagem fique sobre as colunas */
 }
