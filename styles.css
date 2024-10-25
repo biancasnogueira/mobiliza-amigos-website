@@ -269,3 +269,51 @@ nav ul li a {
 #img2-sobre-nos{  
   transform: translateY(15%);
 }
+
+
+/* Seção missao visao valores */
+.missao-mobiliza{
+  background-color: #733268;
+}
+
+#retangulo-abaixo-do-titulo{
+  margin-left: 40px;
+}
+
+.missao-mobiliza h2{
+  color: #fff;
+  font-size: 36px;
+  padding: 50px 0px 0px 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.informacoes-container {
+  display: flex; /* Define o container como flexbox */
+  justify-content: space-between; /* Espaçamento igual entre os itens */
+  align-items: flex-start; /* Alinha os itens no topo (início da linha) */
+  gap: 20px; /* Espaço entre os itens */
+  /* padding: 20px 0px 20px 30px; */
+  margin: 20px 0px 150px 30px; 
+  color: #fff;
+}
+
+.informacao-item {
+  flex: 1; /* Garante que cada item ocupe a mesma largura */
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.informacao-item h3 {
+  font-size: 1.5em; /* Tamanho maior para os títulos */
+  margin-bottom: 10px;
+  color: #fff; /* Cor para os títulos */
+}
+
+.informacao-item p {
+  font-size: 1em;
+  color: #333; /* Cor do texto do parágrafo */
+  line-height: 1.5; /* Melhor leitura com espaçamento entre as linhas */
+  color: #fff;
+}
