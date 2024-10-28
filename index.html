@@ -114,18 +114,57 @@
       </div>
     </div>
 
-  <!-- CARROSSEL -->
-  <div id="carrossel">
-    <!-- DIVISÃO DOS CARDS -->
-    <div id="div-cards">
-        <img id="seta-esquerda" onclick="RolarParaEsquerda()" class="seta" src="icons/seta-esquerda.svg" alt="icone de seta esquerda">
-        <img id="leonardo" class="card" src="imgs/carrossel1.svg" alt="Depoimento leonardo">
-        <img id="samantha" class="card" src="imgs/carrossel2.svg" alt="Depoimento samantha">
-        <img id="bruna" class="card" src="imgs/carrossel3.svg" alt="Depoimento bruna">
-        <img id="seta-direita" onclick="RolarParaDireita()" class="seta" src="icons/seta-direita.svg" alt="icone de seta direita">
-    </div> 
- </div>
+<!-- Carrossel -->
+<div id="carrossel">
+  <!-- Setas -->
+  <img id="seta-esquerda" class="seta" src="icons/seta-esquerda.svg" alt="Ícone de seta esquerda" onclick="RolarParaEsquerda()">
+  <div id="div-cards">
+      <img id="leonardo" class="card" src="imgs/carrossel1.svg" alt="Depoimento Leonardo">
+      <img id="samantha" class="card" src="imgs/carrossel2.svg" alt="Depoimento Samantha">
+      <img id="bruna" class="card" src="imgs/carrossel3.svg" alt="Depoimento Bruna">
+      <img id="bruna4" class="card" src="imgs/carrossel4.svg" alt="Depoimento Bruna">
+      <img id="bruna5" class="card" src="imgs/carrossel5.svg" alt="Depoimento Bruna">
+      <img id="bruna6" class="card" src="imgs/carrossel7.svg" alt="Depoimento Bruna">
+  </div> 
+  <img id="seta-direita" class="seta" src="icons/seta-direita.svg" alt="Ícone de seta direita" onclick="RolarParaDireita()">
+</div>
+
+<!-- Fale com a gente -->
+<section id="fale-com-a-gente">
+  <h2>FALE COM A GENTE</h2>
+  <div class="contato-container">
+    <div class="contato-opcao">
+      <h3>Incentivo</h3>
+      <p>Tire dúvida sobre abertura de inscrições, sobre próximas ações, fique ligado na nossa agenda.</p>
+      <img src="imgs/whatsapp.svg" alt="Fale agora por WhatsApp">
+    </div>
+    <div class="contato-opcao">
+      <h3>Captação de Recursos</h3>
+      <p>Tire dúvida sobre financeiro, prestação de contas, se torne um patrocinador.</p>
+      <img src="imgs/whatsapp.svg" alt="Fale agora por WhatsApp">
+    </div>
+    <div class="contato-opcao">
+      <h3>Iniciativa Social</h3>
+      <p>Entre em contato direto com a coordenação do nosso projeto.</p>
+      <img src="imgs/whatsapp.svg" alt="Fale agora por WhatsApp">
+    </div>
+    <div class="contato-opcao">
+      <h3>Lojinha do Bem</h3>
+      <p>Converse com nosso time para adquirir um produto, e acesse nosso catálogo.</p>
+      <img src="imgs/whatsapp.svg" alt="Fale agora por WhatsApp">
+    </div>
+    <div class="formulario-contato">
+      <h3>Envie sua mensagem:</h3>
+      <form>
+        <input type="text" placeholder="Nome" required>
+        <input type="email" placeholder="E-mail" required>
+        <textarea placeholder="Digite sua mensagem aqui..." required></textarea>
+        <button type="submit">ENVIAR</button>
+      </form>
+    </div>
+  </div>
 </section>
 
+<script src="index.js"></script>
 </body>
 </html>
