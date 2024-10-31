@@ -220,7 +220,7 @@ nav ul li a {
 }
 
 .conteudo-sobre-nos {
-  max-width: 55%;
+  max-width: 60%;
 }
 
 .sobre-nos h2 {
@@ -241,6 +241,14 @@ nav ul li a {
   font-weight: 600;
   font-style: normal;
 }
+/* Estilo para o contador */
+.contador {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white; /* cor de destaque */
+  white-space: nowrap;
+}
+
 
 .sobre-nos blockquote {
   font-style: italic;
@@ -307,7 +315,7 @@ nav ul li a {
 
 .informacao-item h3 {
   font-size: 1.5em; /* Tamanho maior para os títulos */
-  margin-bottom: 10px;
+  margin-bottom: 13px;
   color: #fff; /* Cor para os títulos */
 }
 
@@ -316,6 +324,7 @@ nav ul li a {
   color: #333; /* Cor do texto do parágrafo */
   line-height: 1.5; /* Melhor leitura com espaçamento entre as linhas */
   color: #fff;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Carrossel */
@@ -325,7 +334,6 @@ nav ul li a {
   justify-content: center;
   overflow: hidden;
   position: relative;
-  margin-bottom: 20px;
 }
 
 #div-cards {
@@ -361,51 +369,76 @@ nav ul li a {
 
 
 /* FALE COM A GENTE */
+
 #fale-com-a-gente {
-  background-color: #FFB600; /* cor de fundo amarelo */
-  padding: 40px;
-  color: #FFFFFF; /* cor do texto */
+  background-color: #FFB600;
+  color: #FFFFFF;
   text-align: left;
 }
 
 #fale-com-a-gente h2 {
-  font-size: 2rem;
+  font-size: 36px;
   font-weight: bold;
-  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  padding: 50px 0px 0px 40px;
 }
 
 .contato-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 40px;
 }
 
-.contato-opcao, .formulario-contato {
-  background-color: #FFB600; /* amarelo */
+.contatos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  width: 60%;
+}
+
+.contato-opcao {
+  background-color: #FFB600;
   border-radius: 5px;
-  padding: 20px;
-  width: 45%;
-  margin-bottom: 20px;
   text-align: left;
+  padding: 20px; /* Adiciona um pouco de espaço interno */
 }
 
 .contato-opcao h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
+  color: #733268;
 }
 
 .contato-opcao p {
   font-size: 0.9rem;
   margin-bottom: 10px;
+  color: white;
+  width: 280px;
 }
 
 .contato-opcao img {
-  width: 150px; /* Ajuste o tamanho do ícone do WhatsApp */
+  width: 150px; /* Ajuste o tamanho do ícone para melhor visibilidade */
+  height: auto; /* Manter a proporção */
+  margin-top: 8px; /* Espaço acima do ícone */
+  transition: transform 0.3s; /* Transição suave para o ícone */
+}
+
+.contato-opcao a:hover img {
+  transform: scale(1.2); /* Aumenta o ícone ao passar o mouse */
+}
+.formulario-contato {
+  width: 35%;
 }
 
 .formulario-contato h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
+  color: #733268;
 }
 
 .formulario-contato form {
@@ -419,11 +452,86 @@ nav ul li a {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-family: 'Roboto', sans-serif; 
 }
 
 .formulario-contato button {
-  background-color: #733268; /* roxo */
+  background-color: #733268;
   color: #FFFFFF;
   padding: 10px;
   border: none;
-  border-radius: 
+  border-radius: 5px;
+}
+
+/* Estilo do Footer */
+footer {
+  background-color: #80276E; /* Cor roxa de fundo */
+  color: white;
+  padding: 20px 0;
+  font-family: 'Roboto', sans-serif; 
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  text-align: center;
+}
+
+.logo-column img {
+  max-width: 200px; /* Tamanho máximo do logo */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.footer-column h4 {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.links-column a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.links-column a:hover {
+  text-decoration: underline;
+}
+
+.contacts-column p {
+  font-size: 0.9em;
+  margin: 5px 0;
+}
+
+.social-column h4 {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.social-column img {
+  color: white;
+  font-size: 1.5em;
+  margin: 0 10px;
+  text-decoration: none;
+  max-width: 30px;
+  height: auto;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ffffff33;
+  padding-top: 10px;
+  font-size: 0.8em;
+  text-align: center;
+}
