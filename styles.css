@@ -327,46 +327,83 @@ nav ul li a {
   font-family: "Roboto", sans-serif;
 }
 
-/* Carrossel */
-#carrossel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  position: relative;
+/* Define a área do carrossel, centralizando-o e limitando a largura máxima */
+.container-carrossel {
+  position: relative; /* Necessário para posicionar as setas absolutas dentro desse container */
+  max-width: 100%; /* Define a largura máxima do carrossel */
+  margin: 0; /* Centraliza o carrossel na página */
 }
 
-#div-cards {
-  display: flex;
-  transition: transform 0.3s ease-in-out;
-  width: fit-content; /* Ajuste dinâmico para o tamanho do conteúdo */
+/* Contêiner que mantém as imagens visíveis e esconde o resto */
+.gallery-wrapper {
+  overflow: hidden; /* Esconde as partes da galeria que saem do contêiner */
+  width: 100%; /* Mantém a largura da galeria dentro do container */
+  position: relative; /* Permite o posicionamento absoluto dos elementos filhos */
 }
 
-.card {
-  flex: 0 0 300px;
-  height: 250px;
-  object-fit: cover;
+/* Estilo das setas de navegação */
+.arrow-left,
+.arrow-right {
+  position: absolute; /* Permite que as setas sejam posicionadas em relação ao contêiner pai */
+/* Alinha as setas verticalmente ao centro do contêiner */
+  transform: translateY(-50%); /* Ajusta a posição das setas para o centro */
+  width: 40px; /* Largura das setas */
+  height: 40px; /* Altura das setas */
+  border: none; /* Remove a borda padrão dos botões */
+  cursor: pointer; /* Muda o cursor para indicar que é um botão clicável */
+  z-index: 2; /* Garante que as setas fiquem acima de outros elementos */
+  background-color: transparent;
 }
 
-.seta {
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  position: absolute;
-  transform: translateY(-50%);
-  background-color: #FFB600;
-  border-radius: 50%;
-}
-
-#seta-esquerda {
+/* Posiciona a seta esquerda */
+.arrow-left {
+  left: 10px; /* Distância do lado esquerdo */
   top: 50%;
-  left: 10px;
 }
 
-#seta-direita {
-  top: 50%;
-  right: 10px;
+/* Posiciona a seta direita */
+.arrow-right {
+  right: 27px; /* Distância do lado direito */
+  top: 42%;
 }
+
+/* Estilo da galeria de imagens */
+.gallery {
+  display: flex; /* Permite que os itens sejam alinhados em linha */
+  transition: transform 0.5s ease; /* Anima a transição de movimento */
+}
+
+/* Estilo individual de cada item da galeria */
+.item {
+  min-width: 303px; /* Largura mínima de cada item */
+  height: 250px; /* Altura fixa para os itens */
+  flex-shrink: 0; /* Impede que os itens encolham */
+  transition: opacity 0.5s ease; /* Anima a transição da opacidade */
+}
+
+/* Estilo do item atualmente visível */
+.current-item {
+  opacity: 1; /* O item atual é completamente opaco */
+  transform: scale(1.05); /* Aumenta levemente o item atual para destaque opcional */
+}
+
+/* Oculta a barra de rolagem para Chrome, Safari e Opera */
+.gallery-wrapper::-webkit-scrollbar {
+  display: none; /* Remove a barra de rolagem do navegador */
+}
+
+/* Remove qualquer indicação de foco ao interagir com o controle */
+.control:focus {
+  outline: none; /* Remove a indicação de foco ao clicar */
+}
+
+/* Oculta a barra de rolagem para IE, Edge e Firefox */
+.gallery-wrapper {
+  -ms-overflow-style: none; /* IE e Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+
 
 
 /* FALE COM A GENTE */
