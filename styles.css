@@ -25,6 +25,11 @@ header {
   width: 150px;
 }
 
+:root {
+  --roxo-mobiliza: #733268;
+  --amarelo-mobiliza: #f7b32b;
+}
+
 nav ul {
   list-style: none;
   display: flex;
