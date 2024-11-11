@@ -27,7 +27,7 @@ header {
 
 :root {
   --roxo-mobiliza: #733268;
-  --amarelo-mobiliza: #f7b32b;
+  --amarelo-mobiliza: #FFB600;
 }
 
 nav ul {
@@ -61,7 +61,7 @@ nav ul li a {
 
 .cta-buttons .doar,
 .cta-buttons .patrocinar {
-  background-color: #733268;
+  background-color: var(--roxo-mobiliza);
 }
 
 .hero {
@@ -119,17 +119,17 @@ nav ul li a {
 }
 
 .coluna-desejo-ser-voluntario {
-  background-color: #733268;
+  background-color: var(--roxo-mobiliza);
   color: #fff;
 }
 
 .coluna-time-do-bem {
-  background-color: #FFB600;
-  color: #733268;
+  background-color:var(--amarelo-mobiliza);
+  color: var(--roxo-mobiliza);
 }
 
 .coluna-nossa-lojinha {
-  background-color: #733268;
+  background-color: var(--roxo-mobiliza);
   color: #fff;
 }
 
@@ -142,21 +142,21 @@ nav ul li a {
 
 .coluna-nossa-lojinha .paragrafo1-amarelo{
   font-family: 'Caveat', serif;
-  color: #FFB600;
+  color: var(--amarelo-mobiliza);
   font-size: 35px;
   margin: 33px 0px 15px 0px;
 }
 
 .coluna-desejo-ser-voluntario .paragrafo1-amarelo{
   font-family: 'Caveat', serif;
-  color: #FFB600;
+  color: var(--amarelo-mobiliza);
   font-size: 35px;
   margin: 0px 0px 10px 0px;
 }
 
 .coluna-time-do-bem .paragrafo1-roxo {
   font-family: 'Caveat', serif;
-  color: #733268;
+  color: var(--roxo-mobiliza);
   font-size: 35px;
   margin: 10px 0px 10px 0px;
 }
@@ -188,7 +188,7 @@ nav ul li a {
 
 .colunas button:hover {
   background-color: white;
-  color: #FFB600;
+  color: var(--amarelo-mobiliza);
   transition: 0.3s;
 }
 
@@ -220,7 +220,7 @@ nav ul li a {
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
-  background-color: #FFB600;
+  background-color: var(--amarelo-mobiliza);
   padding: 40px;
 }
 
@@ -229,7 +229,7 @@ nav ul li a {
 }
 
 .sobre-nos h2 {
-  color: #733268;
+  color: var(--roxo-mobiliza);
   font-size: 36px;
   margin-bottom: 20px;
   font-family: "Poppins", sans-serif;
@@ -257,7 +257,7 @@ nav ul li a {
 
 .sobre-nos blockquote {
   font-style: italic;
-  color: #733268;
+  color: var(--roxo-mobiliza);
   font-size: 20px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -286,7 +286,7 @@ nav ul li a {
 
 /* Seção missao visao valores */
 .missao-mobiliza{
-  background-color: #733268;
+  background-color: var(--roxo-mobiliza);
 }
 
 #retangulo-abaixo-do-titulo{
@@ -414,7 +414,7 @@ nav ul li a {
 /* FALE COM A GENTE */
 
 #fale-com-a-gente {
-  background-color: #FFB600;
+  background-color:var(--amarelo-mobiliza);
   color: #FFFFFF;
   text-align: left;
 }
@@ -445,7 +445,7 @@ nav ul li a {
 }
 
 .contato-opcao {
-  background-color: #FFB600;
+  background-color: var(--amarelo-mobiliza);
   border-radius: 5px;
   text-align: left;
   padding: 20px; /* Adiciona um pouco de espaço interno */
@@ -454,7 +454,7 @@ nav ul li a {
 .contato-opcao h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
-  color: #733268;
+  color: var(--roxo-mobiliza);
 }
 
 .contato-opcao p {
@@ -481,7 +481,7 @@ nav ul li a {
 .formulario-contato h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
-  color: #733268;
+  color: var(--roxo-mobiliza);
 }
 
 .formulario-contato form {
@@ -499,7 +499,7 @@ nav ul li a {
 }
 
 .formulario-contato button {
-  background-color: #733268;
+  background-color: var(--roxo-mobiliza);
   color: #FFFFFF;
   padding: 10px;
   border: none;
